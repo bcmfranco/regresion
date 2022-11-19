@@ -1,0 +1,16 @@
+# Partimos de un dataframe en donde tenemos la edad de la persona que pidió un crédito
+## el monto del crédito que pidió, y si devolvió o no la plata
+### vamos a tratar de generar un modelo que basado en la edad y el monto solicitado
+### nos permita predecir si la persona va a pagar el crédito que está solicitando
+
+. Se llama KNN
+. El primer gráfico ya nos permite observar ciertas regiones
+Si una persona de 45 años pide un crédito de 300k es muy probable que lo pague
+porque todos sus vecinos son pagadores.
+. No hay mucha relación entre un crédito de 10 y uno de 600k, por lo que es necesario escalar los datos
+para darle mayor consistencia
+. Una regla a dedo para determinar cuántos vecinos tomar, es tomar la raíz cuadrada de las instancias
+Entonces si tengo 200 filas de datos, agarro entre 14 y 15 vecinos
+. Las probabilidades por clase te van a decir qué probabilidad tuvo de caer en una u otra clase
+
+https://www.youtube.com/watch?v=XN6fChNqfbs&list=PLat2DtY8K7YV0SnVzUg0NNX2Wy_B_aytl&index=17
